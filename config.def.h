@@ -71,8 +71,8 @@ static const struct arg args[] = {
 	{ battery_state, "CHR: %s | ", "BAT0"},
 	{ battery_perc, "BAT0: %s%%", "BAT0"},
 	{ battery_remaining, " (%s) | ", "BAT0"},
-	{ battery_perc, "BAT1: %s%%", "BAT1"}, */
-	{ battery_remaining, " (%s) | ", "BAT1"}, */
+	{ battery_perc, "BAT1: %s%%", "BAT1"},
+	{ battery_remaining, " (%s) | ", "BAT1"},
 	{ cpu_freq, "CPU:%sHz | ", NULL},
 	{ ram_used, "%s/", NULL},
 	{ ram_total, "%s | ", NULL},
