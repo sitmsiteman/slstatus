@@ -79,6 +79,6 @@ static const struct arg args[] = {
 	{ disk_free, "%s | ", "/"},
 	{ ipv4, "%s | ", "enp0s31f6"},
 	{ temp, "TEMP:%s°C | ", "/sys/class/thermal/thermal_zone0/temp"},
-	{ datetime,
-	"%s",           "%F %T" },
+	{ run_command, "%s | ", "xset q | grep -q 'timeout:  0' && echo Caf || echo DeCaf" },
+	{ datetime, "%s",           "%F %T" },
 };
