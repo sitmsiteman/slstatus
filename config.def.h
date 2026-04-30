@@ -67,16 +67,16 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ alsa_master_vol, "V: %s | ", NULL},
-	{ battery_perc, "BAT0: %s%%", "BAT0"},
-	{ battery_state, "(%s) | ", "BAT0"},
-	{ battery_perc, "BAT1: %s%% | ", "BAT1"},
-	{ cpu_freq, "%sHz ", NULL},
+	{ alsa_master_vol, "%s | ", NULL},
+	{ battery_state, " (%s) ", "BAT0"},
+	{ battery_perc, "%s%%", "BAT0"},
+	{ battery_perc, ", %s%%", "BAT1"},
+	{ cpu_freq, " | %sHz ", NULL},
 	{ temp, "%s°C | ", "/sys/class/thermal/thermal_zone0/temp"},
 	{ ram_used, "%s/", NULL},
 	{ ram_total, "%s | ", NULL},
-	{ disk_free, "%s | ", "/"},
+/*	{ disk_free, "%s | ", "/"},	*/
 	{ ipv4, "%s | ", "enp0s31f6"},
-	{ run_command, "%s | ", "xset q | grep -q 'timeout:  0' && echo Caf || echo DeCaf" },
-	{ datetime, "%s",           "%F %T" },
+	{ run_command, "%s | ", "xset q | grep -q 'timeout:  0' && echo Caf || echo Zzz" },
+	{ datetime, "%s", "%y/%m/%d %H:%M" },
 };
