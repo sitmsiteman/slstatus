@@ -71,7 +71,7 @@ static const struct arg args[] = {
 	{ battery_perc, "BAT0: %s%%", "BAT0"},
 	{ battery_state, "(%s) | ", "BAT0"},
 	{ battery_perc, "BAT1: %s%% | ", "BAT1"},
-	{ cpu_freq, "%' '7sHz ", NULL},
+	{ cpu_freq, "%sHz ", NULL},
 	{ temp, "%s°C | ", "/sys/class/thermal/thermal_zone0/temp"},
 	{ ram_used, "%s/", NULL},
 	{ ram_total, "%s | ", NULL},
